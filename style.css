@@ -71,6 +71,7 @@ body {
 .sidebar li {
   margin: 28px 0px;
   margin-left: 6px;
+  list-style-type: none;
 }
 .sidebar li a {
   text-decoration: none;
@@ -123,6 +124,22 @@ body {
 .fa-rocketchat:before {
   content: "\f3e8";
   margin-left: 40px;
+}
+/* view-all section  */
+.view-all-section {
+}
+.view-all {
+  text-align: center;
+  margin-bottom: 80px;
+  display: none;
+}
+.view-all a {
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  padding: 15px 30px;
+  font-size: 30px;
+  border-radius: 5px;
 }
 /* Footer section start  */
 .footer-bg {
@@ -196,4 +213,22 @@ body {
 }
 .match-info {
   text-align: center;
+}
+/*------------------ 
+Media query css 
+--------------------- */
+/* Tablet device  */
+@media screen and (max-width: 992px) {
+  .wrapper {
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sidebar {
+    display: none;
+  }
+  .view-all {
+    display: block;
+  }
 }
