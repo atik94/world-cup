@@ -74,11 +74,11 @@ body {
   gap: 15px;
 }
 .sidebar {
-  background-color: #024161;
   width: 380px;
   height: 230px;
   border-radius: 5px;
   padding-left: 35px;
+  background-color: #024161;
 }
 .sidebar li {
   margin: 28px 0px;
