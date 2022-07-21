@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Soccer World Cup</title>
+    <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/3ecaae1a5b.js" crossorigin="anonymous"></script>
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Banner section start -->
-    <section class="banner-bg">
+    <section class="banner-bg wrapper">
       <div class="banner">
         <div class="banner-left">
           <h1>The Greatest show on the earth</h1>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin literature from 45 BC, making it over 2000 years old
+            The FIFA World Cup is the most prestigious soccer competition in the world. Played every four years, the
+            World Cup hosts the top 32 national teams in a monthlong tournament.
           </p>
           <a class="btn" href="">Watch Live <i class="fa-solid fa-angle-right"></i></a>
         </div>
@@ -26,12 +31,18 @@
       </div>
     </section>
     <!-- Main section start  -->
-    <section class="container-bg">
+    <section class="container-bg wrapper">
       <main class="main-container">
         <div class="sidebar">
-          <li><a class="link-btn-one" href="">Upcoming Match</a></li>
+          <li>
+            <a class="link-btn-one" style="background-color: #ff5200; color: white" href="match.html">Upcoming Match</a>
+          </li>
           <li><a class="link-btn-two" href="">All-Group</a></li>
-          <li><a class="link-btn-three" href="">Blog</a></li>
+          <li>
+            <a class="link-btn-three" style="background-color: white !important; color: black !important" href=""
+              >Blog</a
+            >
+          </li>
         </div>
         <div class="container">
           <div class="upcoming-container">
@@ -129,8 +140,14 @@
         </div>
       </main>
     </section>
+    <!-- view-all section  -->
+    <section class="view-all-section">
+      <div class="view-all">
+        <a href="">View-All</a>
+      </div>
+    </section>
     <!-- Footer section start  -->
-    <footer class="footer-bg">
+    <footer class="footer-bg wrapper">
       <h2 class="footer-title">Goal</h2>
       <div class="footer-top">
         <li>Contact us</li>
@@ -142,10 +159,8 @@
       </div>
       <div class="social-icon">
         <a class="icon icon-color-one" href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="icon icon-color-four" href=""><i class="fa-brands fa-youtube"></i></a>
-        <a class="icon icon-color-two" href=""><i class="fa-brands fa-twitter"></i></a>
-        <a class="icon icon-color-five" href=""><i class="fa-brands fa-google"></i></a>
-        <a class="icon icon-color-three" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="icon icon-color-two" href=""><i class="fa-brands fa-youtube"></i></a>
+        <a class="icon icon-color-three" href=""><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
   </body>

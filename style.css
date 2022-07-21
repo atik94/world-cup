@@ -1,27 +1,26 @@
 /* css common and utilites style  */
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #e0e7f7;
 }
 /* Banner section style  */
 .banner-bg {
   width: 1200px;
-  background-color: black;
+  background-color: #024161;
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 80px;
 }
-.banner-bg:hover {
-  filter: grayscale(100%);
-}
 .banner {
   display: flex;
+  margin-top: -50px;
 }
 .banner-left {
   width: 50%;
   color: white;
   margin-bottom: 140px;
   margin-left: 50px;
+  margin-top: 50px;
 }
 .banner-left h1 {
   font-size: 80px;
@@ -39,14 +38,26 @@ body {
 }
 .banner-right img {
   width: 100%;
+  height: 100%;
+}
+.banner-right img:hover {
+  filter: grayscale(100%);
 }
 .btn {
   text-decoration: none;
-  background-color: red;
+  background-color: #ff5200;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   line-height: 50px;
+  text-transform: uppercase;
+  transition: o.3s ease;
+}
+.btn:hover {
+  background-color: #024161;
+  color: white;
+  border: 2px solid green;
+  border-radius: 20px;
 }
 .fa-angle-right:before {
   content: "\f105";
@@ -63,10 +74,11 @@ body {
   gap: 15px;
 }
 .sidebar {
-  background-color: black;
+  background-color: #024161;
   width: 380px;
   height: 230px;
   border-radius: 5px;
+  padding-left: 35px;
 }
 .sidebar li {
   margin: 28px 0px;
@@ -84,7 +96,7 @@ body {
   text-align: center;
 }
 .link-btn-three {
-  background-color: red !important;
+  background-color: #ff5200 !important;
   color: white !important;
 }
 .container {
@@ -143,7 +155,7 @@ body {
 }
 /* Footer section start  */
 .footer-bg {
-  background-color: black;
+  background-color: #024161;
   padding: 60px 0px;
 }
 .footer-title {
@@ -166,11 +178,10 @@ body {
   margin-top: 20px;
 }
 .social-icon a {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .icon {
   width: 30px;
-
   border-radius: 50%;
   display: inline-block;
   padding-top: 5px;
@@ -180,19 +191,11 @@ body {
   color: white;
 }
 .icon-color-two {
-  background: #55acee;
+  background: #bb0000;
   color: white;
 }
 .icon-color-three {
   background: #007bb5;
-  color: white;
-}
-.icon-color-four {
-  background: #bb0000;
-  color: white;
-}
-.icon-color-five {
-  background: #dd4b39;
   color: white;
 }
 /* Upcoming match part  */
@@ -217,8 +220,47 @@ body {
 /*------------------ 
 Media query css 
 --------------------- */
+
+/* Mobile device responsibe  */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+  }
+  .banner-bg {
+    margin-left: 12%;
+  }
+  .banner {
+    display: block;
+  }
+  .banner-left {
+    width: 100%;
+  }
+  .banner-right {
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sidebar {
+    display: none;
+  }
+  .footer-bg {
+    margin-left: 12%;
+  }
+  .footer-top {
+    display: block;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .upcoming-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 25%;
+  }
+}
+
 /* Tablet device  */
-@media screen and (max-width: 992px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .wrapper {
     width: 100%;
   }
@@ -230,5 +272,14 @@ Media query css
   }
   .view-all {
     display: block;
+  }
+  .banner {
+    display: flex;
+  }
+  #last-blog {
+    display: none;
+  }
+  .upcoming-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
